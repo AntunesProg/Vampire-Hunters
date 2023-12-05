@@ -1,0 +1,15 @@
+public abstract class Personagem {
+    public String name;
+    public int maxHp, hp, xp;
+
+    public Personagem(String name, int maxHp, int xp){
+        this.name = name;
+        this.maxHp = maxHp;
+        this.xp = xp;
+        this.hp = maxHp;
+    }
+
+    public abstract int attack();
+    public abstract int defend();
+    
+}
